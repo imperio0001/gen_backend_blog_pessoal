@@ -6,6 +6,7 @@ import java.util.Optional;
 import com.blogPessoalItau.model.Postagem;
 import com.blogPessoalItau.repository.PostagemRepository;
 
+import com.blogPessoalItau.repository.TemaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,6 +22,9 @@ public class PostagemController {
 
     @Autowired
     private PostagemRepository postagemRepository;
+
+    @Autowired
+    private TemaRepository temaRepository;
 
     @GetMapping
     public ResponseEntity<List<Postagem>> getAll() {
