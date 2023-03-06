@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.UpdateTimestamp;
 
 @Entity
-@Table(name = "tb_postagens")
+@Table(name = "tb_postagens_ods1")
 public class Postagem {
 
     @Id
